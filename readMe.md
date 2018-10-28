@@ -1,3 +1,9 @@
+# Use it now
+
+For an online version of this code visit: https://repl.it/@TomMoses/timetable
+
+# Instructions
+
 • Open your my.bham timetable and select to view it as:
   - All term time, all week, all day, list timetable (with calendar dates)
 
