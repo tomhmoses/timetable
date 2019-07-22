@@ -1,0 +1,41 @@
+{% extends "structure.html" %}
+{% block title %}Tom's London To Paris{% endblock %}
+{% block description %}Donate to Breast Cancer Now.{% endblock %}
+{% block url %}https://ttc.tmoses.co.uk/donate{% endblock %}
+{% block extra_styles %}
+    <style>
+        .pinkbutton {background-color: #FC92A4; border: none;} /* Pink */
+        .paypalbutton {background-color: #2997D8; border: none;}
+    </style>
+{% endblock %}
+{% block navbar_items %}
+    <li class="nav-item">
+        <a class="nav-link" href="https://home.tmoses.co.uk/">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="https://ttc.tmoses.co.uk/">Timetable</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="https://home.tmoses.co.uk/repairs">Repairs</a>
+    </li>
+    <li class="nav-item active">
+        <a class="nav-link" href="#">Donate <span class="sr-only">(current)</span></a>
+    </li>
+{% endblock %}
+{% block page_content %}
+    <h3></h3>
+    <p>
+        <a href="https://l2p19.everydayhero.com/uk/tom" class="btn btn-secondary btn-lg pinkbutton" target="_blank">Breast Cancer Now</a>
+    </p>
+    <p>
+        You can donate directly to this donation page.
+    </p>
+    <p>
+        <a href="https://paypal.me/tomhmoses" class="btn btn-primary btn-lg paypalbutton" target="_blank">Donate via Paypal</a>
+    </p>
+    <p>
+        For donations sent via paypal I will upload them all to the donation page... this may be an easier way to donate but it's up to you.
+    </p>
+
+    <div id='raised'></div>
+{% endblock %}
