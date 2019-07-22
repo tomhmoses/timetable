@@ -1,0 +1,65 @@
+{% extends "structure.html" %}
+{% block title %}Share | UoB Timetable Converter{% endblock %}
+{% block head_scripts %}
+    <!-- Share this verification -->
+    <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5c4605d6058f100011a5ac6f&product=sticky-share-buttons' async='async'></script>
+    <!-- End share this verification -->
+{% endblock %}
+{% block body_scripts %}
+    <!-- facebook share button javascript -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2';
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- End facebook share button javascript -->
+    <!-- twiter share button javascript -->
+    <script>window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+          t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function(f) {
+          t._e.push(f);
+        };
+
+        return t;
+        }(document, "script", "twitter-wjs"));
+    </script>
+    <!-- End twiter share button javascript -->
+{% endblock %}
+{% block page_content %}
+    <h1>
+        Share
+    </h1>
+    <p>
+        <div class="fb-like" data-href="https://tomhmoses.pythonanywhere.com/timetable/" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
+    </p>
+    <p>
+        <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Add%20your%20%40mybham%20timetable%20to%20your%20phone%20calendar%20now%3A" data-size="large">
+            Tweet
+        </a>
+    </p>
+    <p>
+        <div
+            class="sharethis-inline-share-buttons"
+            data-url="https://ttc.tmoses.co.uk/"
+            data-title="Check out UoB Timetable Converter!"
+            data-description="Easily add your student timetable to your calendar on your phone (or other device)."
+            data-image="https://i.imgur.com/FuSqj7t.jpg">
+        </div>
+    </p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <div class='sharethis-sticky-share-buttons' data-url='https://ttc.tmoses.co.uk/'></div>
+{% endblock %}
